@@ -1,0 +1,44 @@
+body{
+  padding: 50px;
+  background-image: linear-gradient(45deg, #ff2f00, #f2f289);
+ }
+ h1{
+  padding: 10px;
+  margin-bottom: 30px;
+ }
+
+a{
+  color: black;
+  font-size: 16px;
+}
+a:hover{
+  animation: hovered;
+  animation-duration: 3s;
+  opacity: 60%;
+  font-size: medium;
+  align-self: center;
+}
+
+@keyframes hovered{
+  from{
+    opacity : 100%;
+    font-size: medium;
+  }
+  to{
+    opacity: 60%;
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  input,.form-control{
+    display : inline-block !important;
+    width: 300px !important;
+    margin-bottom: 16px !important;
+  }
+  h2{
+
+    font-size : 25px;
+  }
+  
+}
